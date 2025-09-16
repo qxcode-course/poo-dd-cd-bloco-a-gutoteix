@@ -1,0 +1,14 @@
+2025-09-16 19:35:30, MOVE, v:1, k:git_pratica, mode:DOWN
+2025-09-16 19:37:32, MOVE, v:1, k:toalha, mode:DOWN
+2025-09-16 19:38:08, MOVE, v:1, k:toalha, mode:PICK
+2025-09-16 19:40:00, EXEC, v:1, k:toalha, mode:FREE, size:1
+2025-09-16 19:40:59, EXEC, v:1, k:toalha, mode:FREE
+2025-09-16 19:42:30, MOVE, v:1, k:toalha, mode:BACK
+2025-09-16 19:46:05, SELF, v:1, k:toalha
+2025-09-16 19:51:56, SELF, v:1, k:toalha
+2025-09-16 19:52:00, SELF, v:1, k:toalha
+2025-09-16 19:52:00, MOVE, v:1, k:toalha, mode:PICK
+2025-09-16 19:52:07, EXEC, v:1, k:toalha, mode:FREE
+2025-09-16 19:52:15, MOVE, v:1, k:toalha, mode:BACK
+2025-09-16 19:52:15, MOVE, v:1, k:toalha, mode:PICK
+2025-09-16 19:52:16, MOVE, v:1, k:toalha, mode:BACK

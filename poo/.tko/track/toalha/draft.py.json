@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-40-00",
+            "content": "print(\"minha toalha \u00e9 a que tiver no banheiro\")\n",
+            "lines": "1"
+        }
+    ]
+}
