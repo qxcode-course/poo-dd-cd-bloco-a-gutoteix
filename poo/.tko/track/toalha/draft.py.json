@@ -7,8 +7,38 @@
         },
         {
             "label": "2025-09-16_20-03-20",
-            "content": "print(\"minha toalha \u00e9 linda\")\n",
+            "content": "@@ -1,382 +1,30 @@\n-class Towel:%0A    def __init__(self, color: str, size: str):%0A        self.color = %22red%22%0A        self.size = %22p%22%0A        self.wetness = 0%0A        %0A    def __str__(self):%0A        return f%22color:%7Bself.color%7D, tam:%7Bself.size%7D, hum:%7Bself.wetness%7D%22%0A%0Atowel = Towel(%22green%22, %22G%22)%0Atowel2 = Towel(%22black%22, %22GG%22)%0A%0A%0Atowel.color = %22White%22%0Aprint(towel.color)%0Aprint(towel.size)%0Aprint(towel.wetness)\n+print(%22minha toalha %C3%A9 linda%22)%0A\n",
             "lines": "1"
+        },
+        {
+            "label": "2025-09-23_19-25-34",
+            "content": "@@ -129,16 +129,24 @@\n ess = 0%0A\n+        \n %0A    def\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-09-23_20-01-59",
+            "content": "@@ -142,373 +142,236 @@\n def \n-dry(self, amount: int) -%3E None:%0A        self.wetness += amount%0A%0A    def getMaxWetness(self) -%3E int:%0A        if self.size == %22P%22:%0A            return 10%0A        if self.size == %22M%22:%0A            return 20%0A        if self.size == %22G%22:%0A            return 30%0A        %0A%0A    def __str__(self) -%3E str: %0A        return f%22color:%7Bs\n+__str__(self):%0A        return f%22color:%7Bself.color%7D, tam:%7Bself.size%7D, hum:%7Bself.wetness%7D%22%0A%0Atowel = Towel(%22green%22, %22G%22)%0Atowel2 = Towel(%22black%22, %22GG%22)%0A%0A%0Atowel.color = %22White%22%0Aprint(tow\n el\n-f\n .color\n-%7D, tam:%7Bs\n+)%0Aprint(tow\n el\n-f\n .size\n-%7D, hum:%7Bs\n+)%0Aprint(tow\n el\n-f\n .wetness\n %7D%22%0A%0A\n@@ -358,20 +358,17 @@\n nt(towel.wetness\n-%7D%22%0A%0A\n+)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-09-23_22-11-27",
+            "content": "@@ -71,20 +71,16 @@\n lf.color\n-:str\n  = %22red%22\n@@ -101,12 +101,8 @@\n size\n-:str\n  = %22\n@@ -128,12 +128,8 @@\n ness\n-:int\n  = 0\n@@ -205,153 +205,8 @@\n unt%0A\n-        if self.wetness %3E= self.getMaxWetness():%0A                print(%22toalha encharcada%22)%0A                self.wetness = self.getMaxWetness()%0A%0A\n %0A   \n@@ -391,24 +391,24 @@\n turn 30%0A\n+\n         \n return 0\n@@ -403,16 +403,8 @@\n     \n-return 0\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-09-23_23-34-08",
+            "content": "@@ -676,86 +676,4 @@\n %7D%22%0A%0A\n-dog = Towel(%22Velha%22, %22M%22)%0Aprint(dog)%0Adog.dry(3)%0Aprint(dog)%0Adog.dry(15)%0Adog.dry(10)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-09-23_23-37-34",
+            "content": "@@ -694,17 +694,17 @@\n elha%22, %22\n-G\n+M\n %22)%0Aprint\n@@ -721,9 +721,9 @@\n dry(\n-5\n+3\n )%0Apr\n@@ -739,17 +739,18 @@\n dog.dry(\n-2\n+15\n )%0Adog.dr\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-09-23_23-43-32",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        self.color:str = \"red\"\n        self.size:str = \"p\"\n        self.wetness:int = 0\n\n    def dry(self, amount: int) -> None:\n        self.wetness += amount\n        if self.wetness >= self.getMaxWetness():\n                print(\"toalha encharcada\")\n                self.wetness = self.getMaxWetness()\n\n\n    def getMaxWetness(self) -> int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\":\n            return 20\n        if self.size == \"G\":\n            return 30\n        return 0\n\n    def __str__(self) -> str: \n        return f\"color:{self.color}, tam:{self.size}, hum:{self.wetness}\"\n\ndog = Towel(\"Velha\", \"G\")\nprint(dog)\ndog.dry(5)\nprint(dog)\ndog.dry(2)\ndog.dry(10)",
+            "lines": "31"
         }
     ]
 }
