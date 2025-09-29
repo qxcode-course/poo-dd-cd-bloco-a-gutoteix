@@ -11,11 +11,12 @@ expanded:
 - bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:80, guide:Aula, alone:4, study:100}'
+  animal: '{rate:25, iagen:20, guide:aula, alone:2, study:120}'
   enxugar: '{rate:100, guide:Aula, study:30}'
 flags:
-  quests: 0
+  quests: 1
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
-index: animal
+index: carro
