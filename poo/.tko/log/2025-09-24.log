@@ -94,3 +94,21 @@
 2025-09-24 01:11:48, EXEC, v:1, k:enxugar, mode:FULL, rate:0
 2025-09-24 01:12:49, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
 2025-09-24 01:13:12, EXEC, v:1, k:enxugar, mode:FULL, rate:100, size:57
+2025-09-24 23:07:29, MOVE, v:1, k:toalha, mode:PICK
+2025-09-24 23:07:33, EXEC, v:1, k:toalha, mode:FREE, size:50
+2025-09-24 23:07:44, MOVE, v:1, k:toalha, mode:BACK
+2025-09-24 23:07:45, MOVE, v:1, k:toalha, mode:PICK
+2025-09-24 23:07:46, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-24 23:07:50, MOVE, v:1, k:toalha, mode:BACK
+2025-09-24 23:11:19, SELF, v:1, k:toalha, rate:80, guide:Aula, alone:4, study:100
+2025-09-24 23:11:27, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-24 23:11:35, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-24 23:12:30, SELF, v:1, k:enxugar, guide:Aula, study:30
+2025-09-24 23:12:39, MOVE, v:1, k:enxugar, mode:PICK
+2025-09-24 23:12:40, EXEC, v:1, k:enxugar, mode:FULL, rate:100
+2025-09-24 23:12:46, MOVE, v:1, k:enxugar, mode:BACK
+2025-09-24 23:12:49, MOVE, v:1, k:toalha, mode:PICK
+2025-09-24 23:12:50, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-24 23:12:53, MOVE, v:1, k:toalha, mode:BACK
+2025-09-24 23:13:07, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 23:13:08, EXEC, v:1, k:animal, mode:FULL, rate:0, size:6
