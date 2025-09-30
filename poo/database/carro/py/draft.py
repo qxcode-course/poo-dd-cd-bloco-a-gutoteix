@@ -10,31 +10,58 @@ class Car:
         return f"pass: {self.pas}, gas: {self.gas}, km: {self.km}"
     
     def enter(self) -> None:
-        if self.pas < self.pasMax :
+        if self.pas < self.pasMax:
             self.pas += 1
+        else:
+            print("fail: limite de pessoas atingido")
     
     def leave(self) -> None:
-        self.pas -= 1
+        if self.pas > 0:
+            self.pas -= 1
+        else:
+            print("fail: nao ha ninguem no carro")
         
     def fuel(self, increment: int) -> None:
-        if increment <= self.gasMax:
-            self.gas = increment
-    
+        self.gas += increment
+        if self.gas > self.gasMax:
+            self.gas = self.gasMax
+
     def drive(self, distance: int) -> None:
-        if 
+        if self.pas == 0:
+            print("fail: nao ha ninguem no carro")
+            return
+            
+        if self.gas == 0:
+            print("fail: tanque vazio")
+            return 
+
+        if self.gas >= distance:
+            self.gas -= distance
+            self.km += distance
+            
+        else:
+            self.km += self.gas
+            print(f"fail: tanque vazio apos andar {self.gas} km")
+            self.gas = 0
         
     
 def main():
-    carro = Car()     
+    carro = Car()
     while True:
         line: str = input()
         print("$" + line)
         args: list[str] = line.split(" ")
 
-        
         if args[0] == "show":
             print(carro)
+        elif args[0] == "enter":
+            carro.enter()
+        elif args[0] == "leave":
+            carro.leave()
+        elif args[0] == "fuel":
+            carro.fuel(int(args[1]))
+        elif args[0] == "drive":
+            carro.drive(int(args[1]))
         elif args[0] == "end":
             break
-        
 main()
