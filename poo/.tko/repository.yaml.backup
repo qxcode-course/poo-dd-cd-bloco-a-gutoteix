@@ -11,9 +11,10 @@ expanded:
 - bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:80, guide:Aula, alone:4, study:100}'
-  animal: '{rate:100, iagen:20, guide:aula, alone:2, study:120}'
+  animal: '{rate:100, iagen:20, guide:aula, alone:6, study:120}'
   carro: '{rate:100, human:Monitor, iagen:copilot, alone:5, study:150}'
-  enxugar: '{rate:100, guide:Aula, study:30}'
+  calculadora: '{rate:100, human:monitor, iagen:gemini, alone:6, study:150}'
+  enxugar: '{rate:100, guide:Aula, alone:6, study:30}'
 flags:
   quests: 1
   tracks: 0
